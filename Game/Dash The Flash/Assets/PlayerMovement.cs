@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
         // private Camera myCamera;
-//     public CharacterController controller;
+    public CharacterController controller;
 
 
 //   PhotonView view;
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
  }
 
 */
-    public CharacterController controller;
+    // public CharacterController controller;
     // public Transform cam;   /////
 
 
