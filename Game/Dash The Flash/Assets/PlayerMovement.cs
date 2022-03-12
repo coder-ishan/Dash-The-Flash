@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
         // private Camera myCamera;
     public CharacterController controller;
     
+    
 
 //   PhotonView view;
 //    private void Start()
