@@ -1,16 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Bullet
     - Camerafollow
     - CircleControllerScriptNew
     - ConnectToServer
     - CountdownScript
     - CreateAndJoinRooms
-    - Laser_Tutorial
-    - LineL
     - NetworkManager
     - PlayerMovement
     - SpawnPlayers
+    - Weapon
     - restartScript
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
@@ -23,6 +23,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PhotonTransformViewClassicEditor
+    - Photon.Pun.PhotonViewInspector
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
@@ -90,13 +92,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3520}
+      Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 3548}
+      Script: {instanceID: 3550}
     - Class: 114
-      Script: {instanceID: 3674}
+      Script: {instanceID: 3676}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,6 +138,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 65
@@ -157,21 +161,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3538}
+      Script: {instanceID: 3540}
     - Class: 114
-      Script: {instanceID: 3548}
-    - Class: 114
-      Script: {instanceID: 3954}
+      Script: {instanceID: 3550}
     - Class: 114
       Script: {instanceID: 4210}
     - Class: 114
-      Script: {instanceID: 4992}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 4994}
+    - Class: 114
+      Script: {instanceID: 5360}
+    - Class: 114
+      Script: {instanceID: 18098}
+    - Class: 114
+      Script: {instanceID: 18100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,7 +225,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
     - Class: 54
+      Script: {instanceID: 0}
+    - Class: 58
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -260,13 +272,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3538}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3548}
+      Script: {instanceID: 3540}
     - Class: 114
       Script: {instanceID: 3550}
+    - Class: 114
+      Script: {instanceID: 3552}
     - Class: 114
       Script: {instanceID: 4328}
     - Class: 114
@@ -274,11 +288,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4778}
     - Class: 114
-      Script: {instanceID: 5016}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 5084}
+      Script: {instanceID: 5018}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 5086}
+    - Class: 114
+      Script: {instanceID: 5360}
     - Class: 114
       Script: {instanceID: 5664}
     - Class: 114
@@ -343,15 +359,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3328}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 3362}
+      Script: {instanceID: 3360}
     - Class: 114
-      Script: {instanceID: 3548}
+      Script: {instanceID: 3550}
     - Class: 114
-      Script: {instanceID: 3674}
+      Script: {instanceID: 3676}
     - Class: 114
       Script: {instanceID: 4898}
     - Class: 115
@@ -866,12 +882,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LineL
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
@@ -943,10 +953,22 @@ ScriptsOnlyBuild:
     className: OfflineModeProperty
   - hash:
       serializedVersion: 2
+      Hash: 38bbdce71c06d7893de5aa8308a56b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseDirnRotation
+  - hash:
+      serializedVersion: 2
       Hash: 4c0ebd9e77f5bc0558d19d8313e54bb9
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
     className: SplinePosition
+  - hash:
+      serializedVersion: 2
+      Hash: 9ee4e69a1287bfe259ceea86d29c1920
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Weapon
   - hash:
       serializedVersion: 2
       Hash: 57d2b3ca58a430f7cf319bb757c1f0f5
@@ -1103,12 +1125,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: ConnectToRegionUIForm
-  - hash:
-      serializedVersion: 2
-      Hash: 7112c9430db5eacba2e829dcf4c20ea5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Laser_Tutorial
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -1411,6 +1427,12 @@ ScriptsOnlyBuild:
     className: TextButtonTransition
   - hash:
       serializedVersion: 2
+      Hash: 2445479c25b0a7273e0588f722f7baeb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1589,12 +1611,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 07002b46e9c78734215ffc965b4cda67
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GunPlayerMovementScript
   - hash:
       serializedVersion: 2
       Hash: 3ba023cd67d72cace33969ab863e0fd4

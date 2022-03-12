@@ -23,7 +23,7 @@ public class CountdownScript : MonoBehaviour
     {timer = mainTimer; }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {      {
           if(timer>= 0.0f && canCount)
           {

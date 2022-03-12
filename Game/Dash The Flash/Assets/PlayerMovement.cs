@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
         // private Camera myCamera;
     public CharacterController controller;
-
+    
 
 //   PhotonView view;
 //    private void Start()
@@ -77,7 +77,8 @@ public class PlayerMovement : MonoBehaviour
    {
         // Camera.main.GetComponent<Camerafollow>().setTarget(gameObject.transform);
        view = GetComponent<PhotonView>();
-        if (!view.IsMine)
+
+       if (!view.IsMine)
        {
            Destroy(GetComponentInChildren<Camera>().gameObject);
        }
@@ -121,13 +122,21 @@ public class PlayerMovement : MonoBehaviour
  
             // controller.Move(moveDir.normalized * speed *Time.deltaTime);////////////////
             controller.Move(direction* speed *Time.deltaTime);
+
+
+
+           
         }
          
         }
       
       
     }
+
+   
 }
+
+
 
     
 
