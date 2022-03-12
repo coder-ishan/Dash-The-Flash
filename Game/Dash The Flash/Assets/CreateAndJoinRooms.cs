@@ -23,9 +23,10 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
  }
  public override void OnJoinedRoom()
- {
+ {   
+    
      PhotonNetwork.LoadLevel("Game");
-     
+    
 
     // Vector3 randomPosition = new Vector3(Random.Range(minX,maxX), Random.Range(minZ,maxZ));
     // PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);

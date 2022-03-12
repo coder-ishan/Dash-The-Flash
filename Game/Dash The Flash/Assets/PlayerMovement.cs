@@ -73,10 +73,14 @@ public class PlayerMovement : MonoBehaviour
 
 
     PhotonView view;
-   private void Start()
+    void Start()
    {
         // Camera.main.GetComponent<Camerafollow>().setTarget(gameObject.transform);
        view = GetComponent<PhotonView>();
+        if (!view.IsMine)
+       {
+           Destroy(GetComponentInChildren<Camera>().gameObject);
+       }
      
    }
 
